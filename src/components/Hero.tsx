@@ -3,7 +3,7 @@ import { ShieldCheck } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-indigo-100 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
@@ -28,9 +28,9 @@ const Hero: React.FC = () => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-full max-w-lg">
-              <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-              <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-              <div className="absolute -bottom-8 left-20 w-72 h-72 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+              <div className="absolute top-0 -left-8 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+              <div className="absolute top-0 -right-8 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+              <div className="absolute -bottom-16 left-20 w-80 h-80 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
               <div className="relative">
                 <img 
                   src="https://images.pexels.com/photos/3755511/pexels-photo-3755511.jpeg?auto=compress&cs=tinysrgb&w=600" 
