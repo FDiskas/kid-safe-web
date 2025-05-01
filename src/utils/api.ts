@@ -12,16 +12,12 @@ export const checkUrlSafety = async (
       url = 'https://' + url;
     }
 
-    console.log(url);
-
-    return false;
-
     // Extract domain from the URL
     const domain = new URL(url).hostname.replace(/^www\./, '');
 
     // Make the API call
     const response = await fetch(
-      `https://is.coders.lt/?site=${encodeURIComponent(domain)}`
+      `https://is.coders.lt/?site=${encodeURIComponent('https://' + domain)}`
     );
 
     if (!response.ok) {
